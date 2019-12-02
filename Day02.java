@@ -1,11 +1,11 @@
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class Two extends AoC {
+public class Day02 extends AoC {
     ArrayList<Integer> numbers;
 
     public static void main(String[] args) throws IOException {
-        new Two().solve();
+        new Day02().solve();
     }
 
     void solve() throws IOException {
@@ -25,7 +25,7 @@ public class Two extends AoC {
                             numbers.set(indexDestiny,firstInt*secondInt);
                         } else if(opCode==99){
                             if(numbers.get(0)==19690720) log(100*one + two);
-                            break;
+                            System.exit(0);
                         } else {
                             System.out.println("er gaat iets mis");
                         }
@@ -33,7 +33,6 @@ public class Two extends AoC {
                 }
             }
         }
-
     }
 
     void makeNumbers(int one, int two){
