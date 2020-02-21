@@ -37,6 +37,19 @@ public abstract class AoC {
         }
     }
 
+    void printCharGrid(char[][] grid){
+        for (int y = 0; y < grid.length; y++) {
+            char[] chars = grid[y];
+            System.out.println();
+            for (int x = 0;x < chars.length; x++) {
+                char aChar = chars[x];
+                System.out.print(aChar);
+            }
+        }
+        System.out.println();
+    }
+
+
     void calculate(){
         for(int y=0;y<1;y++){
             for(int x=0;x<1;x++){}
@@ -50,4 +63,5 @@ public abstract class AoC {
     void log(int i){
         System.out.println(i);
     }
+
 }
